@@ -1,0 +1,85 @@
+
+/* The main container that holds categories */
+.view-book {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr); /* 6 items per row */
+  gap: 40px; /* Adjusted space between the items */
+  padding: 20px;
+  max-height: 80vh; /* Restrict to 80% of the viewport height */
+  width: 90%; /* Set a width of 90% for responsive design */
+  box-sizing: border-box;
+  /* Removed overflow-y: auto to avoid scrolling */
+}
+
+/* Category Item Styling */
+.file {
+  display: flex;
+  
+  flex-direction: column; /* Arrange icon and text vertically */
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #007bff, #1e3c72);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  text-align: center; /* Ensure text is centered */
+}
+
+.file:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.file i {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.file span {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/* Media Queries for Better Responsiveness */
+@media (max-width: 768px) {
+  .view-book {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row on smaller screens */
+    gap: 20px; /* Adjusted gap for smaller screens */
+  }
+
+  .file {
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+
+  .file i {
+    font-size: 2em;
+  }
+
+  .file span {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .view-book {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on very small screens */
+    gap: 15px; /* Adjusted gap for very small screens */
+  }
+
+  .file {
+    padding: 10px;
+  }
+
+  .file i {
+    font-size: 1.8em;
+  }
+
+  .file span {
+    font-size: 0.8em;
+  }
+}

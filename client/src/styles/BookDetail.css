@@ -1,0 +1,92 @@
+/* BookDetail.css */
+
+/* Container for book detail page */
+.book-detail-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card style for the book detail */
+.book-detail {
+  max-width: 600px; /* Reduced width for a more compact layout */
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px;
+}
+
+/* Book info section */
+.book-info {
+  margin-bottom: 20px;
+}
+
+.book-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.book-author,
+.book-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.book-description {
+  line-height: 1.6;
+}
+
+/* Book image styling */
+.book-image img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Link to the book */
+.book-link a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* Actions section with buttons */
+.book-actions {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* Button styles */
+.add-to-favorites-button,
+.get-book-button {
+  background-color: #0066cc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.add-to-favorites-button:hover,
+.get-book-button:hover {
+  background-color: #005bb5;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}

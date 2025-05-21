@@ -1,0 +1,79 @@
+/* Styling for the Issued Books Component */
+.issued-books {
+  padding: 30px; /* Increased padding for more space around the content */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for a cleaner effect */
+  max-width: 1200px; /* Increased max-width to allow more space */
+  margin: 30px auto; /* Adjusted margin for better spacing */
+}
+
+/* Title Styling */
+.issued-books h2 {
+  text-align: center;
+  font-size: 2.5rem; /* Increased font size for better visibility */
+  color: #333;
+  margin-bottom: 25px; /* Increased margin for better spacing */
+}
+
+/* Table Styling */
+.issued-books-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added a bigger shadow for modern effect */
+}
+
+.issued-books-table th, .issued-books-table td {
+  padding: 15px 20px; /* Increased padding for larger click/touch targets */
+  text-align: left;
+  font-size: 1.1rem; /* Increased font size for readability */
+  color: #333;
+}
+
+.issued-books-table th {
+  background-color: #4CAF50;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.issued-books-table td {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* Hover effect for rows */
+.issued-books-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Action column - approved status styling */
+.action-approved {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Alternating row colors for better readability */
+.issued-books-table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .issued-books-table th, .issued-books-table td {
+    padding: 12px 15px; /* Slightly reduced padding for smaller screens */
+  }
+  
+  .issued-books {
+    margin: 20px; /* Adjusted margin for smaller screens */
+  }
+  
+  .issued-books h2 {
+    font-size: 2rem; /* Reduced font size for smaller screens */
+    margin-bottom: 20px;
+  }
+}
